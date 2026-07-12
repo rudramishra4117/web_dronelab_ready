@@ -9,8 +9,9 @@ services:
       POSTGRES_DB: dronelab
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: adminpassword
-    ports:
-      - "5432:5432"
+    ##ports:
+      ##- "5432:5432"
+      container_name: dronelab-postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -60,8 +61,8 @@ services:
     image: nginx:alpine
     container_name: dronelab-proxy
     restart: always
-    ports:
-      - "80:80"
+    ##ports:
+      ##- "80:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
       - ./Backend/Drone_web/media:/media:ro
