@@ -1,0 +1,777 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-07-11T14:59:44.686Z",
+        "user": 2,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "new — hg hv",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-07-11T15:00:34.090Z",
+        "user": 2,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "new — hg hv",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-07-11T15:20:24.819Z",
+        "user": 2,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "mgvhgvhgvhg (local)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-07-11T15:20:24.819Z",
+        "user": 2,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "rgregergeherhe (local)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-07-11T15:20:24.819Z",
+        "user": 2,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "dgegsee (local)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-07-11T15:20:24.819Z",
+        "user": 2,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "jhon (local)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-07-11T15:20:24.819Z",
+        "user": 2,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "jhondoe (google)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-07-11T17:17:42.203Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "F550 (templates)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-07-11T17:56:02.932Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "F450 starter base (templates)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-07-11T18:56:08.227Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Drone 1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-07-11T18:56:08.240Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Drone 2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-07-11T18:56:08.243Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "Drone 3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-07-11T18:56:08.245Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "4",
+        "object_repr": "Drone 4",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-07-11T19:09:40.607Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Drone 1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2026-07-11T19:09:40.634Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Drone 2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2026-07-11T19:09:40.637Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "Drone 3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2026-07-11T19:09:40.639Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "4",
+        "object_repr": "Drone 4",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2026-07-11T19:16:57.297Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Drone 1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2026-07-11T19:16:57.313Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Drone 2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2026-07-11T19:16:57.316Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "Drone 3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2026-07-11T19:16:57.318Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "4",
+        "object_repr": "Drone 4",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2026-07-11T19:17:20.892Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Drone 1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2026-07-11T19:17:20.898Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Drone 2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2026-07-11T19:17:20.900Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "Drone 3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2026-07-11T19:17:20.902Z",
+        "user": 2,
+        "content_type": 15,
+        "object_id": "4",
+        "object_repr": "Drone 4",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2026-07-11T19:44:07.112Z",
+        "user": 2,
+        "content_type": 16,
+        "object_id": "1",
+        "object_repr": "INTERACTIVE DRONE BOOTCAMPS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2026-07-11T19:44:07.124Z",
+        "user": 2,
+        "content_type": 16,
+        "object_id": "2",
+        "object_repr": "INNOVATIVE DRONE RESEARCH",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2026-07-11T19:44:30.408Z",
+        "user": 2,
+        "content_type": 16,
+        "object_id": "1",
+        "object_repr": "INTERACTIVE DRONE BOOTCAMPS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2026-07-11T19:44:30.414Z",
+        "user": 2,
+        "content_type": 16,
+        "object_id": "2",
+        "object_repr": "INNOVATIVE DRONE RESEARCH",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2026-07-11T20:09:38.524Z",
+        "user": 2,
+        "content_type": 17,
+        "object_id": "1",
+        "object_repr": "Solar Powered Vertical Take-Off and Landing (VTOL)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}, {\"added\": {\"name\": \"PoC Gallery Image\", \"object\": \"Gallery Image for Solar Powered Vertical Take-Off and Landing (VTOL)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2026-07-11T20:20:37.897Z",
+        "user": 2,
+        "content_type": 17,
+        "object_id": "4",
+        "object_repr": "new",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2026-07-11T20:59:58.521Z",
+        "user": 2,
+        "content_type": 17,
+        "object_id": "4",
+        "object_repr": "new",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Order\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2026-07-11T21:00:27.750Z",
+        "user": 2,
+        "content_type": 17,
+        "object_id": "4",
+        "object_repr": "new",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$dfM8eqTdPZvjUkynz2SyUk$YBIRw2/9My8wFs+UUqkdu+mC4TTMJHP0VipQsW3F5k0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jhondoe",
+        "first_name": "",
+        "last_name": "",
+        "email": "rudramishra4117@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-07-10T10:49:47.714Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$K5Vl12Lmn2SzudYZkBwI94$oEuWKcm72Fw5Jqh3Dsh8cXB5Lf9579j3fnYV/a2hdvI=",
+        "last_login": "2026-07-11T18:54:48.999Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-07-10T10:54:26.866Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$1v3L2i3pDhRme2EgnUjmDu$f/LFskUNGIpLeDx1JU7CrambSH3FU35jcAq1UyqQcys=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jhon",
+        "first_name": "",
+        "last_name": "",
+        "email": "abcrefc@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-07-10T11:03:33.845Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$bLqYMhUKdlaTjCIiR9ob6h$tk8ITgBLn4WNL6QEFNI3ZXeJGPW+n1txZ4r7ZAdDlhg=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "dgegsee",
+        "first_name": "",
+        "last_name": "",
+        "email": "thes@gerg.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-07-11T12:05:12.441Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$zEqF8MP5HsuI0R1NtrHOYo$GqsQVntBJMhXQ/EmXNh6cJz12GD7K0dtXGM20rP9xX4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "rgregergeherhe",
+        "first_name": "",
+        "last_name": "",
+        "email": "eherggre@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-07-11T12:54:03.957Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$BsFARd0D8uxaB1TNgHUuwD$VEJRNU6Vu6D/pogjf9PETYPjRUlgYV4n812guSgk1hE=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "mgvhgvhgvhg",
+        "first_name": "",
+        "last_name": "",
+        "email": "Agdfd@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-07-11T13:03:24.437Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+        "password": "!78slI5vp2VDTPiYaZ7iqKmfMcXt8GKfRPpiWXmFD",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "rudranmishra",
+        "first_name": "Rudra",
+        "last_name": "N Mishra",
+        "email": "justsoul4117@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-07-11T14:58:06.577Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "hcnes7v9ceqf5nqis8jewe7c5ysdf8je",
+    "fields": {
+        "session_data": ".eJxVjEsOwjAMBe-SNYqMQ1zKkn3PUNmxQwsokfpZIe4OlbqA7ZuZ93I9r8vQr7NN_aju4tAdfjfh9LCyAb1zuVWfalmmUfym-J3Ovqtqz-vu_h0MPA_fmnKmRqWVLMQSIaQQCE8QADHGRAJEnPHcQLIErR2bHHNLgKqMauzeH-akOCQ:1wicqf:_89aQ-tvwG4aE88vO0Bl4yKSasMtlOscT6P_oCVGPRM",
+        "expire_date": "2026-07-25T18:54:49.007Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "qimvv7r6957wc3b5yjxobl5dxds761bd",
+    "fields": {
+        "session_data": ".eJxVjEsOwjAMBe-SNYqMQ1zKkn3PUNmxQwsokfpZIe4OlbqA7ZuZ93I9r8vQr7NN_aju4tAdfjfh9LCyAb1zuVWfalmmUfym-J3Ovqtqz-vu_h0MPA_fmnKmRqWVLMQSIaQQCE8QADHGRAJEnPHcQLIErR2bHHNLgKqMauzeH-akOCQ:1wibGj:Rk8aO2MALsgeJynTPTbcuj2lNb-qv9OTkGQLn_Sb5x0",
+        "expire_date": "2026-07-25T17:13:37.290Z"
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 6,
+    "fields": {
+        "user": 7,
+        "provider": "google",
+        "provider_id": "108217172881704332120",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocK7MdiLwnbAPQfJH8QUaU480-umtkzdqyQsUEDykuEXXei9ADM=s96-c"
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 7,
+    "fields": {
+        "user": 1,
+        "provider": "google",
+        "provider_id": "106162146072905533592",
+        "avatar_url": "https://lh3.googleusercontent.com/a/ACg8ocISOmq39-72XyhuX0SgSOu-8NBoDpvRN8hHGNlyUlMYMETWk0U=s96-c"
+    }
+},
+{
+    "model": "content.sitestatistics",
+    "pk": 1,
+    "fields": {
+        "students_trained": 0,
+        "updated_at": "2026-07-11T15:00:34.114Z"
+    }
+},
+{
+    "model": "content.dailyactiveuser",
+    "pk": 1,
+    "fields": {
+        "user": 2,
+        "date": "2026-07-11"
+    }
+},
+{
+    "model": "content.cadmodel",
+    "pk": 1,
+    "fields": {
+        "name": "F550",
+        "category": "templates",
+        "file": "cad_models/files/F550.step",
+        "image": "cad_models/images/F550.png",
+        "uploaded_at": "2026-07-11T17:17:42.187Z"
+    }
+},
+{
+    "model": "content.cadmodel",
+    "pk": 2,
+    "fields": {
+        "name": "F450 starter base",
+        "category": "templates",
+        "file": "cad_models/files/F450_Stater_Base.step",
+        "image": "cad_models/images/F450_Stater_Base.png",
+        "uploaded_at": "2026-07-11T17:56:02.911Z"
+    }
+},
+{
+    "model": "content.heroimage",
+    "pk": 1,
+    "fields": {
+        "title": "Drone 1",
+        "image": "landing_drone/drone1.png",
+        "is_active": true,
+        "order": 1
+    }
+},
+{
+    "model": "content.heroimage",
+    "pk": 2,
+    "fields": {
+        "title": "Drone 2",
+        "image": "landing_drone/drone2.png",
+        "is_active": true,
+        "order": 2
+    }
+},
+{
+    "model": "content.heroimage",
+    "pk": 3,
+    "fields": {
+        "title": "Drone 3",
+        "image": "landing_drone/drone3.png",
+        "is_active": true,
+        "order": 3
+    }
+},
+{
+    "model": "content.heroimage",
+    "pk": 4,
+    "fields": {
+        "title": "Drone 4",
+        "image": "landing_drone/drone4.png",
+        "is_active": true,
+        "order": 4
+    }
+},
+{
+    "model": "content.whatwedoitem",
+    "pk": 1,
+    "fields": {
+        "title": "INTERACTIVE DRONE BOOTCAMPS",
+        "description": "Our bootcamps provide an immersive environment to master drone assembly, circuitry, and maintenance. Guided by experts, students work directly with real hardware—transforming complex engineering concepts into tangible, flight-ready skills.",
+        "image": "what_we_do/image_1.jpg",
+        "is_active": true,
+        "order": 1
+    }
+},
+{
+    "model": "content.whatwedoitem",
+    "pk": 2,
+    "fields": {
+        "title": "INNOVATIVE DRONE RESEARCH",
+        "description": "We translate innovative ideas into functional prototypes by building and field-testing tailored drone solutions. By validating specific use cases and ensuring reliability, our team turns complex concepts into proven, field-ready realities.",
+        "image": "what_we_do/image_2.jpg",
+        "is_active": true,
+        "order": 2
+    }
+},
+{
+    "model": "content.pocitem",
+    "pk": 1,
+    "fields": {
+        "title": "Solar Powered Vertical Take-Off and Landing (VTOL)",
+        "navbar_name": "",
+        "description": "The development of a Solar Powered Vertical Take-Off and Landing (VTOL) drone represents a significant step toward achieving sustainable and energy-efficient unmanned aerial systems. Unlike conventional drones that rely solely on battery power, the proposed design integrates flexible solar panels onto the wings to harness renewable solar energy for in-flight battery charging and endurance enhancement.\r\n\r\nA VTOL configuration was selected to combine the advantages of rotary-wing hovering and fixed-wing forward flight, ensuring both operational flexibility and extended range. Initial tests demonstrated that flexible solar panels could successfully recharge the onboard battery, compensating for energy consumption during flight. Due to the larger size of the panels, scaling the VTOL platform is suggested to achieve optimal integration and improved energy capture.\r\n\r\nThis approach not only reduces dependency on ground-based charging infrastructure but also opens pathways for long-duration missions in applications such as environmental monitoring, surveillance, disaster management, and precision agriculture. The concept highlights the potential of merging renewable energy technology with UAV systems, contributing to the advancement of green aviation solutions.",
+        "main_image": "pocs/poc1.png",
+        "is_active": true,
+        "order": 1
+    }
+},
+{
+    "model": "content.pocitem",
+    "pk": 2,
+    "fields": {
+        "title": "Immersive Drone Flight Simulator",
+        "navbar_name": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula diam vitae est consequat, nec fermentum arcu pharetra. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+        "main_image": "pocs/poc2.jpg",
+        "is_active": true,
+        "order": 2
+    }
+},
+{
+    "model": "content.pocitem",
+    "pk": 3,
+    "fields": {
+        "title": "3D CAD Modeling & Drone Design",
+        "navbar_name": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.",
+        "main_image": "pocs/poc3.jpg",
+        "is_active": true,
+        "order": 3
+    }
+},
+{
+    "model": "content.pocgalleryimage",
+    "pk": 1,
+    "fields": {
+        "poc_item": 1,
+        "image": "pocs/gallery/Starter_Drone.png",
+        "order": 2
+    }
+},
+{
+    "model": "services.service",
+    "pk": 1,
+    "fields": {
+        "title": "3D CAD Editor",
+        "description": "Design, modify, and simulate drone components in our advanced browser-based CAD environment.",
+        "thumbnail": "services/image1.png",
+        "url": "/cad/",
+        "is_external": true,
+        "order": 1,
+        "is_active": true
+    }
+},
+{
+    "model": "services.service",
+    "pk": 2,
+    "fields": {
+        "title": "Simulation",
+        "description": "Run advanced aerodynamic simulations on your drone models before building them.",
+        "thumbnail": "services/image2.png",
+        "url": "/services/simulation",
+        "is_external": false,
+        "order": 2,
+        "is_active": true
+    }
+},
+{
+    "model": "services.service",
+    "pk": 3,
+    "fields": {
+        "title": "Toolbox",
+        "description": "Access drone calculators, battery life estimators, and payload performance metrics.",
+        "thumbnail": "services/image3.png",
+        "url": "/services/toolbox",
+        "is_external": false,
+        "order": 3,
+        "is_active": true
+    }
+}
+]

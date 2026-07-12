@@ -1,0 +1,88 @@
+{
+  "templates": [
+    {
+      "id": "templates/F450 Stater Base.step",
+      "name": "F450 Stater Base",
+      "file": "models/templates/F450 Stater Base.step",
+      "image": "models/templates/F450 Stater Base.png"
+    },
+    {
+      "id": "templates/F550.step",
+      "name": "F550",
+      "file": "models/templates/F550.step",
+      "image": "models/templates/F550.png"
+    },
+    {
+      "id": "templates/Starter Drone.STEP",
+      "name": "Starter Drone",
+      "file": "models/templates/Starter Drone.STEP",
+      "image": "models/templates/Starter Drone.png"
+    }
+  ],
+  "components": {
+    "battery": [
+      {
+        "id": "battery/6S  22.2v 5200maH 60C .stp",
+        "name": "6S  22.2v 5200maH 60C ",
+        "file": "models/battery/6S  22.2v 5200maH 60C .stp",
+        "image": null
+      }
+    ],
+    "F450 Frame Step_Files": [
+      {
+        "id": "F450 Frame Step_Files/1045 propeller.STEP",
+        "name": "1045 propeller",
+        "file": "models/F450 Frame Step_Files/1045 propeller.STEP",
+        "image": null
+      },
+      {
+        "id": "F450 Frame Step_Files/Arm.STEP",
+        "name": "Arm",
+        "file": "models/F450 Frame Step_Files/Arm.STEP",
+        "image": null
+      },
+      {
+        "id": "F450 Frame Step_Files/Bottom plate.STEP",
+        "name": "Bottom plate",
+        "file": "models/F450 Frame Step_Files/Bottom plate.STEP",
+        "image": null
+      },
+      {
+        "id": "F450 Frame Step_Files/Holybro Brushless Motor 2216-880KV.STEP",
+        "name": "Holybro Brushless Motor 2216-880KV",
+        "file": "models/F450 Frame Step_Files/Holybro Brushless Motor 2216-880KV.STEP",
+        "image": null
+      },
+      {
+        "id": "F450 Frame Step_Files/Top plate.STEP",
+        "name": "Top plate",
+        "file": "models/F450 Frame Step_Files/Top plate.STEP",
+        "image": null
+      }
+    ],
+    "flight controller": [
+      {
+        "id": "flight controller/CUBE ORANGE PLUS.stp",
+        "name": "CUBE ORANGE PLUS",
+        "file": "models/flight controller/CUBE ORANGE PLUS.stp",
+        "image": null
+      }
+    ],
+    "motors": [
+      {
+        "id": "motors/HOBBYWING2812.STEP",
+        "name": "HOBBYWING2812",
+        "file": "models/motors/HOBBYWING2812.STEP",
+        "image": null
+      }
+    ],
+    "propeller": [
+      {
+        "id": "propeller/1045 propeller.STEP",
+        "name": "1045 propeller",
+        "file": "models/propeller/1045 propeller.STEP",
+        "image": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,210 @@
+{% extends "unfold/layouts/base_simple.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="dronelab-dashboard">
+
+  {# ── Summary Cards ── #}
+  <div class="dl-cards">
+
+    <div class="dl-card dl-card--purple">
+      <div class="dl-card__icon">🎓</div>
+      <div class="dl-card__body">
+        <div class="dl-card__value">{{ students_trained|default:"0" }}</div>
+        <div class="dl-card__label">Students Trained</div>
+      </div>
+    </div>
+
+    <div class="dl-card dl-card--blue">
+      <div class="dl-card__icon">🏕️</div>
+      <div class="dl-card__body">
+        <div class="dl-card__value">{{ total_bootcamps|default:"0" }}</div>
+        <div class="dl-card__label">Bootcamps Performed</div>
+      </div>
+    </div>
+
+    <div class="dl-card dl-card--green">
+      <div class="dl-card__icon">👥</div>
+      <div class="dl-card__body">
+        <div class="dl-card__value">{{ today_active_users|default:"0" }}</div>
+        <div class="dl-card__label">Active Users Today</div>
+      </div>
+    </div>
+
+    <div class="dl-card dl-card--amber">
+      <div class="dl-card__icon">📊</div>
+      <div class="dl-card__body">
+        <div class="dl-card__value">{{ total_tracked_visits|default:"0" }}</div>
+        <div class="dl-card__label">Total Visits Tracked</div>
+      </div>
+    </div>
+
+  </div>
+
+  {# ── Daily Active Users Chart ── #}
+  <div class="dl-chart-card">
+    <div class="dl-chart-header">
+      <h2 class="dl-chart-title">📈 Daily Active Users — Last 30 Days</h2>
+      <span class="dl-chart-subtitle">Unique authenticated users per day</span>
+    </div>
+    <div class="dl-chart-wrapper">
+      <canvas id="dailyUsersChart"></canvas>
+    </div>
+  </div>
+
+</div>
+
+{# ── Styles ── #}
+<style>
+  .dronelab-dashboard {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Cards */
+  .dl-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .dl-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.4rem 1.6rem;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: var(--dl-card-bg, #1e1b4b);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .dl-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+  }
+
+  .dl-card--purple { background: linear-gradient(135deg,#4c1d95,#6d28d9); }
+  .dl-card--blue   { background: linear-gradient(135deg,#1e3a8a,#2563eb); }
+  .dl-card--green  { background: linear-gradient(135deg,#064e3b,#059669); }
+  .dl-card--amber  { background: linear-gradient(135deg,#78350f,#d97706); }
+
+  .dl-card__icon { font-size: 2rem; line-height: 1; }
+  .dl-card__value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+  }
+  .dl-card__label {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.75);
+    margin-top: 0.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  /* Chart card */
+  .dl-chart-card {
+    background: var(--surface-bg, #1e1b4b10);
+    border: 1px solid rgba(124,58,237,0.2);
+    border-radius: 16px;
+    padding: 1.75rem 2rem 2rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  }
+  .dl-chart-header { margin-bottom: 1.25rem; }
+  .dl-chart-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+  }
+  .dl-chart-subtitle {
+    font-size: 0.82rem;
+    color: #6b7280;
+  }
+  .dl-chart-wrapper {
+    position: relative;
+    height: 320px;
+  }
+</style>
+
+{# ── Chart.js Script ── #}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const labels = {{ chart_labels|safe }};
+  const data   = {{ chart_data|safe }};
+
+  const isDark = document.documentElement.classList.contains('dark') ||
+                 window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  const gridColor  = isDark ? 'rgba(255,255,255,0.07)' : 'rgba(0,0,0,0.07)';
+  const labelColor = isDark ? '#9ca3af' : '#6b7280';
+
+  new Chart(document.getElementById('dailyUsersChart'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Active Users',
+        data,
+        fill: true,
+        tension: 0.42,
+        borderColor: '#7c3aed',
+        borderWidth: 2.5,
+        pointBackgroundColor: '#7c3aed',
+        pointRadius: 4,
+        pointHoverRadius: 7,
+        backgroundColor: function(ctx) {
+          const chart = ctx.chart;
+          const { ctx: c, chartArea } = chart;
+          if (!chartArea) return 'rgba(124,58,237,0.15)';
+          const gradient = c.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+          gradient.addColorStop(0, 'rgba(124,58,237,0.35)');
+          gradient.addColorStop(1, 'rgba(124,58,237,0.02)');
+          return gradient;
+        },
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#1e1b4b',
+          borderColor: '#7c3aed',
+          borderWidth: 1,
+          titleColor: '#a78bfa',
+          bodyColor: '#e5e7eb',
+          padding: 12,
+          callbacks: {
+            label: ctx => ` ${ctx.parsed.y} user${ctx.parsed.y !== 1 ? 's' : ''}`
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: gridColor },
+          ticks: { color: labelColor, maxTicksLimit: 10, font: { size: 11 } }
+        },
+        y: {
+          beginAtZero: true,
+          grid: { color: gridColor },
+          ticks: {
+            color: labelColor,
+            stepSize: 1,
+            font: { size: 11 },
+            callback: v => Number.isInteger(v) ? v : ''
+          }
+        }
+      }
+    }
+  });
+})();
+</script>
+{% endblock %}

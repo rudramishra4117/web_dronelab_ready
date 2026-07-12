@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: dronelab-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: dronelab
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adminpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    container_name: dronelab-backend
+    restart: always
+    working_dir: /app/Drone_web
+    command: gunicorn Drone_web.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 120
+    volumes:
+      - ./Backend:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_HOST=db
+      - DB_NAME=dronelab
+      - DB_USER=admin
+      - DB_PASSWORD=adminpassword
+      - DB_PORT=5432
+      - FRONTEND_URL=http://localhost
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    container_name: dronelab-frontend
+    restart: always
+    # Nginx container inside the frontend image handles static files internally
+    # We won't expose ports directly because the main reverse proxy will route to it
+    expose:
+      - "80"
+
+  cad:
+    build:
+      context: ./3D-Cad
+      dockerfile: Dockerfile
+    container_name: dronelab-cad
+    restart: always
+    expose:
+      - "80"
+
+  proxy:
+    image: nginx:alpine
+    container_name: dronelab-proxy
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./Backend/Drone_web/media:/media:ro
+    depends_on:
+      - frontend
+      - backend
+      - cad
+
+volumes:
+  postgres_data:
